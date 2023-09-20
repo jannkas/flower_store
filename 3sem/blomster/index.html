@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pretty Flowers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<style>
+  body {
+    background-color: aliceblue;
+  }
+
+  .navbar {
+    background-color: aliceblue !important;
+    width: 100%;
+    padding: 10px 20px;
+    color: black;
+    border-bottom: 1px solid #ccc;
+  }
+
+  img {
+    padding: 10px;
+  }
+
+  .buttons {
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 50px;
+    padding: 5px 10px;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: beige;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  .product {
+    display: inline-block;
+    padding-left: 40px;
+    margin: 0 40px;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PRETTY FLOWERS</a>
+      <p>TOTAL: <span id="total">0</span> KR</p>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <div class="product">
+      <div>
+        <img src="img/blomst1.webp" width="300px">
+      </div>
+      <div class="buttons">
+        <button id="minus-button">-</button>
+        <p id="amount">0</p>
+        <button id="add-button">+</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div>
+        <img src="img/blomst2.webp" width="300px">
+      </div>
+      <div class="buttons">
+        <button id="minus-button-2">-</button>
+        <p id="amount-2">0</p>
+        <button id="add-button-2">+</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div>
+        <img src="img/blomst3.webp" width="300px">
+      </div>
+      <div class="buttons">
+        <button id="minus-button-3">-</button>
+        <p id="amount-3">0</p>
+        <button id="add-button-3">+</button>
+      </div>
+    </div>
+
+  </main>
+  <div>
+    <form id="create-flower">
+      <label for="new-name">Name for new flower</label>
+      <input type="text" id="new-name" name="name" />
+    </form>
+  </div>
+  <template id="template">
+    <div>
+      <div class="product">
+        <div>
+          <img id="img" src="" width="300px">
+        </div>
+        <div class="buttons">
+          <button id="minus-button">-</button>
+          <p id="amount">0</p>
+          <button id="add-button">+</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="script.js" defer type="module"></script>
+</body>
+</html>
